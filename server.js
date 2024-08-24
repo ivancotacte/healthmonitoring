@@ -22,7 +22,7 @@ app.use(session({
 app.use('/', authRoutes);
 
 app.get('/', (req, res) => {
-    res.status(200).send({ code: 200, message: 'Welcome to the Auth API' });
+    return res.redirect('/login');
 });
 
 app.listen(PORT, () => {

@@ -28,7 +28,7 @@
                             <p>Please enter your password for <strong><%= email %></strong> (<a href="/edit-email">edit</a>) to continue.</p>
                         <% } %>
                     </div>                    
-                    <form id="authForm" action="/login" method="post" novalidate>
+                    <form id="authForm" action="/auth/login" method="post" novalidate>
                         <% if (!email) { %>
                             <label for="email" class="form-label">Email address</label>
                             <div class="input-group mb-3">
